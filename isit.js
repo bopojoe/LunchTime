@@ -21,11 +21,12 @@ var almostLunch = a.getTime();
 var startLunch = s.getTime();
 var endLunch = e.getTime();
 var missedLunch = m.getTime();
-var difference = startLunch-current  / 1000 / 60;
+var difference = (startLunch-current) / 1000;
+var value = difference/60;
 
 if (current > almostLunch && current < startLunch) {
   document.write('<h1 class="almost">Almost</h1>');
-  document.write(`<h1 class="almost">${difference} minutes</h1>`);
+  document.write(`<h1 class="almost">${value} minutes</h1>`);
 } else if (current > endLunch && current < missedLunch) {
   document.write('<h1 class="missed">Just missed it</h1>');
 } else if (current < startLunch || current > endLunch) {
