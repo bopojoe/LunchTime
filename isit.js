@@ -24,7 +24,7 @@ var missedLunch = m.getTime();
 
 if (current > almostLunch && current < startLunch) {
   document.write('<h1 class="almost">Almost</h1>');
-  document.write(almostLunch-current);
+  document.write(current-almostLunch);
 } else if (current > endLunch && current < missedLunch) {
   document.write('<h1 class="missed">Just missed it</h1>');
 } else if (current < startLunch || current > endLunch) {
