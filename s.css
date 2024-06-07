@@ -28,7 +28,12 @@ div {
     margin-left: 40%;
     color: lightpink;
 }
+
 .missed {
     margin-left: 30%;
     color: lightpink;
+}
+
+.no {
+    color: blue;
 }
